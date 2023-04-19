@@ -63,7 +63,7 @@ export default function Todo() {
           onKeyDown={addTodo}
         />
       </div>
-      <ul>{todoI}</ul>
+      <ul className="RemoveBullet">{todoI}</ul>
       <div>{todoI.length} task left</div>
     </div>
   );

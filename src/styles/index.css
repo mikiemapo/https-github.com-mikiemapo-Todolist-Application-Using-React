@@ -1,11 +1,20 @@
 .spawn {
   padding: 10px 16px;
   margin: 50px 0;
+  margin-left: 350px;
+  margin-right: 350px;
   border-bottom: 1px solid #fafafa;
 }
 
 .spawn{
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.1);
+}
+
+.todoItem {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #fafafa;
+  padding-bottom: 5px 5px;
+  box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.1);
 }
 
 /* .remove {
@@ -13,3 +22,9 @@
 } */
 .remove:hover {
   display: block;}
+
+  .RemoveBullet {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
