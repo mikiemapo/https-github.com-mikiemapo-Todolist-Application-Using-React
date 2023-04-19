@@ -9,29 +9,27 @@ export default function Todo() {
     "do something else",
     "do something again",
   ]);
-    // remove task from the list
+  // remove task from the list
   function removeTask(i) {
     let remItem = newTodo.filter((repItem, repIndex) => {
       return repIndex != i;
     });
     setNewTodo(remItem);
-  
   }
   // map is used to output the template in our case its the do something array
   let todoI = newTodo.map((item, index) => {
- 
     return (
       // on mouse enter is the same as hover key property keeps track of each unique item is allways preceeded by map
       <li
         onMouseEnter={() => setDisplayx(false)}
-        onMouseLeave={() =>setDisplayx(true)}
+        onMouseLeave={() => setDisplayx(true)}
         className="todoItem"
         key={index}
       >
         {item}
         <div
           className={displayx ? "d-none" : "remove"}
-          // remove task use filter
+          // remove task index reffering the function up top
           onClick={() => {
             removeTask(index);
           }}
@@ -41,7 +39,7 @@ export default function Todo() {
       </li>
     );
   });
- // add task to the list . . . is a spread opp
+  // add task to the list and . . . is a spread opp spread opp is used to allow itarables to be spread individually.
   const addTodo = (onKeyDownEvent) => {
     if (onKeyDownEvent.key === "Enter") {
       const newTask = [...newTodo, task];
@@ -52,7 +50,7 @@ export default function Todo() {
 
   return (
     <div className="spawn">
-      <h1>Todo List</h1>
+      <h1>To Do List</h1>
       <div className="Main">
         <input
           className="input"

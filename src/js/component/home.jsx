@@ -5,13 +5,12 @@ import Todo from "./todo";
 
 //create your first component
 
-
 const Home = () => {
-	return (
-		<div className="text-center">
-			<Todo/>
-		</div>
-	);
+  return (
+    <div className="text-center">
+      <Todo />
+    </div>
+  );
 };
 
 export default Home;
